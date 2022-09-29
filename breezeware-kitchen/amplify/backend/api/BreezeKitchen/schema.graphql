@@ -1,0 +1,16 @@
+type Test @model @auth(rules: [{allow: public}, {allow: owner}]) {
+  id: ID!
+  name: String
+  image: String
+  desription: String
+  quantity: String
+  instruction: String
+}
+
+type Snacks @model @auth(rules: [{allow: public}, {allow: owner}]) {
+  id: ID!
+  name: String
+  image: String
+  quantity: Int
+  description: String
+} 
